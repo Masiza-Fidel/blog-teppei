@@ -1,0 +1,210 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description goes here.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="dgm">
+
+    <title>dgm | プレスリリース・ニュース</title>
+
+    <!-- Favicon -->
+    <img src="{% static 'img/logo.png' %}" class="img-fluid">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/news_page_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="newsPage_header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder ps-md-4" href="https://jp.dgmgr.com">
+                    <img src="{% static 'img/logo.png' %}" class="img-fluid">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="https://jp.dgmgr.com/service_page.html">サービス</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">課題から探す</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">プロダクト</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">リソース</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="#">無料診断</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto me-lg-2">
+                            <a class="nav-link" href="#">お問合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner pt-4">
+            <div class="box">
+                <div class="content_part">
+                    <h1>お知らせ一覧</h1>
+                    <p>高い技術力と確かな実績で事業の質とスピードを高めます</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="news_section">
+            <div class="news_buttons">
+                <button class="btn active">All<sup>160</sup></button>
+                <button class="btn">Fintech<sup>14</sup></button>
+                <button class="btn">Saas<sup>4</sup></button>
+                <button class="btn">Web Design<sup>45</sup></button>
+                <button class="btn">App Design<sup>23</sup></button>
+                <button class="btn">UX Design<sup>18</sup></button>
+                <button class="btn">UI Design<sup>13</sup></button>
+            </div>
+            <div class='notice_list'>
+                {% for news_item in news %}
+                <label for="notice_list-b">
+                <h3 class="notice_list-heading">{{ news_item.created_at }} <span>{{ news_item.title }}</span></h3>
+                <h5>{{ news_item.author_name }}</h5>
+                <p>{{news_item.content | safe}}</p>
+                  <!-- You can include other fields of news as needed -->
+                 </label>
+                 {% endfor %}  
+                <input type="checkbox" id="notice_list-a" class="notice_list-toggle">
+                <label for="notice_list-a">
+                    <h3 class="notice_list-heading">2023.12.26 <span>プレスリリース</span><span>プレスリリース</span></h3>
+                    <p class="notice_list-text">株式会社デジタルマーケティング</p>
+                </label>
+                <input type="checkbox" id="notice_list-b" class="notice_list-toggle notice_list-toggle2">
+                <label for="notice_list-b">
+                    <h3 class="notice_list-heading">2023.12.26 <span>プレスリリース</span><span>プレスリリース</span></h3>
+                    <p class="notice_list-text">株式会社デジタルマーケティング</p>
+                </label>
+                <input type="checkbox" id="notice_list-c" class="notice_list-toggle notice_list-toggle3">
+                <label for="notice_list-c">
+                    <h3 class="notice_list-heading">2023.12.26 <span>プレスリリース</span><span>プレスリリース</span></h3>
+                    <p class="notice_list-text">株式会社デジタルマーケティング</p>
+                </label>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="row g-4">
+            <div class="col-md-4 col-12">
+                <div class="box1">
+                    <h1>PRODUCT</h1>
+                    <p>プロダクト</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box2">
+                    <h1>SOLUTION</h1>
+                    <p>課題から探す</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box3">
+                    <h1>Resource</h1>
+                    <p>リソース</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box4">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box5">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box6">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="box7">
+                    <p>企業情報</p>
+                    <p>Copyright dmg @Baryon Partners Corporation All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all notice_list toggle checkboxes and their corresponding text elements
+            const notice_listToggles = document.querySelectorAll('.notice_list-toggle');
+            const notice_listTexts = document.querySelectorAll('.notice_list-text');
+
+            // Hide all notice_list texts initially
+            notice_listTexts.forEach(function (text) {
+                text.style.display = "none";
+            });
+
+            notice_listToggles.forEach(function (toggle) {
+                toggle.addEventListener('change', function () {
+                    // Get the corresponding notice_list text for the clicked toggle
+                    const notice_listText = this.nextElementSibling.querySelector('.notice_list-text');
+
+                    if (this.checked) {
+                        // Show the clicked notice_list text
+                        notice_listText.style.display = "block";
+
+                        // Hide all other notice_list texts
+                        notice_listTexts.forEach(function (text) {
+                            if (text !== notice_listText) {
+                                text.style.display = "none";
+                            }
+                        });
+                    } else {
+                        // Hide the clicked notice_list text
+                        notice_listText.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

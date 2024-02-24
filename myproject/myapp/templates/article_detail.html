@@ -1,0 +1,436 @@
+{%load static%}
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description goes here.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="dgm">
+
+    <title> {{ article.title }} </title>
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="{% static 'img/favicon.icon' %}" type="image/x-icon">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/article_page_styles.css' %}">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="articlePage_header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder ps-md-4" href="https://jp.dgmgr.com">
+                    <img src="{% static 'img/logo.png' %}" class="img-fluid">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="https://jp.dgmgr.com/service_page.html">サービス</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">課題から探す</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">プロダクト</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">リソース</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="#">無料診断</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto me-lg-2">
+                            <a class="nav-link" href="#">お問合わせ</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto me-lg-2">
+                            <a class="nav-link" href="{% url 'admin:index' %}">管理者ログイン</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner pt-4">
+            <div class="box">
+                <div class="content_part">
+                    <h1>{{ article.title }}</h1>
+
+                    <p class="first-p">WEB開発、SEO対策</p>
+                    <p class="second-p">11/11/2024</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="article_section">
+            <div class="row g-4">
+                <div class="col-md-8 col-12 order-md-1 order-2">
+                    <div class="box">
+                        <h2>{{ article.title }}</h2>
+                        <p>{{article.content | safe}}</p>
+                        <h5>{{ article.author_name }}</h5>
+
+                        <div class='article'>
+                            <input type="checkbox" id="article-a" class="article-toggle">
+                            <label for="article-a">
+                                <h3 class="article-heading">関連サービス</h3>
+                                <p class="article-text">WEBサイト開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス サービス 開発サービス 開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　</p>
+                            </label>
+                            <input type="checkbox" id="article-b" class="article-toggle article-toggle2">
+                            <label for="article-b">
+                                <h3 class="article-heading">業界特化サービス</h3>
+                                <p class="article-text">WEBサイト開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 order-md-2 order-1">
+                    <div class="filter_box">
+                        <form>
+                            <div class="search-box">
+                                <button><i class="fas fa-search"></i></button>
+                                <input type="text" placeholder="何をお探しですか?">
+                            </div>
+                        </form>
+                        <div class="category-tabs">
+                            <p class="tab">PR</p>
+                            <p class="tab">連載一覧</p>
+                            <p class="tab">イベント情報</p>
+                            <p class="tab">Web制作</p>
+                            <p class="tab">最も人気のある</p>
+                            <p class="tab">テクノロジー</p>
+                            <p class="tab">Technology</p>
+                            <p class="tab">AI</p>
+                            <p class="tab">SEO対策</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service_list_section">
+            <h1 style="text-align:left;">当社提供関連サービス一覧</h1>
+            <div class="row g-4" id="service_list_columnsContainer">
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5">
+                <button id="seeMoreBtnForServiceList" class="btn" onclick="showMoreServiceListColumns()">もっとみる</button>
+            </div>
+        </section>
+
+        <section class="marketing_section">
+            <div class="row gy-4 gx-3">
+                <div class="col-12">
+                    <div class="box1">
+                        <div class="content">
+                            <h1>DATA-DRIVEN MARKETING AGENCY</h1>
+                            <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box2">
+                        <div class="number">01</div>
+                        <div class="image">
+                            <img src="./img/service1.png" alt="service_image">
+                        </div>
+                        <div class="text">
+                            <h4>Strategy</h4>
+                            <p>戦略サポート</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box3">
+                        <div class="number">02</div>
+                        <div class="image">
+                            <img src="./img/service1.png" alt="service_image">
+                        </div>
+                        <div class="text">
+                            <h4>WEBSITE</h4>
+                            <p>ウェブサイト</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box4">
+                        <div class="number">03</div>
+                        <div class="image">
+                            <img src="./img/service1.png" alt="service_image">
+                        </div>
+                        <div class="text">
+                            <h4>SNS</h4>
+                            <p>SNS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box5">
+                        <div class="number">04</div>
+                        <div class="image">
+                            <img src="./img/service1.png" alt="service_image">
+                        </div>
+                        <div class="text">
+                            <h4>APPLICATION</h4>
+                            <p>アプリケーション</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_section">
+            <div class="contact_box">
+                <div class="contact_header">
+                    <h1>業界・規模問わず分析1,000社以上、 まずはお気軽にご相談ください</h1>
+                </div>
+                <div class="container">
+                    <div class="row g-4 d-flex justify-content-center">
+                        <div class="col-md-4 col-12 box1">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                        <div class="col-md-4 col-12 box2">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                        <div class="col-md-4 col-12 box3">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="row g-4">
+            <div class="col-md-4 col-12">
+                <div class="box1">
+                    <h1>PRODUCT</h1>
+                    <p>プロダクト</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box2">
+                    <h1>SOLUTION</h1>
+                    <p>課題から探す</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box3">
+                    <h1>Resource</h1>
+                    <p>リソース</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box4">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box5">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box6">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="box7">
+                    <p style="padding-left:30px;">企業情報</p>
+                    <p style="font-size: small; color: #db2c36;">Copyright dmg @Baryon Partners Corporation All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all article toggle checkboxes and their corresponding text elements
+            const articleToggles = document.querySelectorAll('.article-toggle');
+            const articleTexts = document.querySelectorAll('.article-text');
+
+            // Hide all article texts initially
+            articleTexts.forEach(function (text) {
+                text.style.display = "none";
+            });
+
+            articleToggles.forEach(function (toggle) {
+                toggle.addEventListener('change', function () {
+                    // Get the corresponding article text for the clicked toggle
+                    const articleText = this.nextElementSibling.querySelector('.article-text');
+
+                    if (this.checked) {
+                        // Show the clicked article text
+                        articleText.style.display = "block";
+
+                        // Hide all other article texts
+                        articleTexts.forEach(function (text) {
+                            if (text !== articleText) {
+                                text.style.display = "none";
+                            }
+                        });
+                    } else {
+                        // Hide the clicked article text
+                        articleText.style.display = "none";
+                    }
+                });
+            });
+
+            // Hide all columns except the first three on page load
+            var allColumns = document.querySelectorAll('.service_list_col');
+            for (var i = 6; i < allColumns.length; i++) {
+                allColumns[i].style.display = 'none';
+            }
+        });
+
+        function showMoreServiceListColumns() {
+            // Get all columns
+            var allColumns = document.querySelectorAll('.service_list_col');
+            
+            // Toggle the visibility of the last three columns
+            for (var i = 6; i < allColumns.length; i++) {
+                allColumns[i].style.display = (allColumns[i].style.display === 'none' || allColumns[i].style.display === '') ? 'block' : 'none';
+            }
+        
+            // Change the "See More" button text based on the current state
+            var seeMoreBtn = document.getElementById('seeMoreBtnForServiceList');
+            var areColumnsVisible = allColumns[3].style.display !== 'none';
+            seeMoreBtn.textContent = areColumnsVisible ? 'もっと見る' : 'もっとみる';
+        }
+    </script>
+</body>
+
+</html>

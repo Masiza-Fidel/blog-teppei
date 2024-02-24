@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description goes here.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="dgm">
+
+    <title>dgm | ブログ</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/favicon.icon' %}" type="image/x-icon">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/contact_page_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="blogPage_header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder ps-md-4" href="https://jp.dgmgr.com">
+                    <img src="{% static 'img/logo.png' %}" class="img-fluid">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="https://jp.dgmgr.com/service_page.html">サービス</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">課題から探す</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">プロダクト</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">リソース</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="#">無料診断</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto me-lg-2">
+                            <a class="nav-link" href="#">お問合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner pt-4">
+            <div class="box">
+                <div class="content_part">
+                    <h1 id="blogPageH1">リソース・ニュース</h1>
+                    <p>高い技術力と確かな実績で事業の質とスピードを高めます</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="blog_section">
+            <div class="row g-4">
+                <div class="col-md-8 col-12 order-md-1 order-2">
+                    <div class="box">
+                        <div class="row g-5">
+                            {% for blog in blogs %}
+                            <div class="col-md-4 col-12">
+                                <div class="box2"></div>
+                                <div class="content px-2">
+                                    <p class="first-p"><a href="{% url 'blog_detail' pk=blog.pk %}">{{ blog.title }}</a></p>
+                                    <p class="second-p">{{ blog.author_name }}</p>
+                                    <p class="third-p">{{ blog.content | safe }}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <div class="col-md-6 col-12">
+                                <div class="box1"></div>
+                                <div class="content px-2">
+                                    <p class="first-p">STRATEGY - SEO</p>
+                                    <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                                    <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="box1"></div>
+                                <div class="content px-2">
+                                    <p class="first-p">STRATEGY - SEO</p>
+                                    <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                                    <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="box1"></div>
+                                <div class="content px-2">
+                                    <p class="first-p">STRATEGY - SEO</p>
+                                    <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                                    <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="box1"></div>
+                                <div class="content px-2">
+                                    <p class="first-p">STRATEGY - SEO</p>
+                                    <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                                    <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 order-md-2 order-1">
+                    <div class="filter_box">
+                        <form>
+                            <div class="search-box">
+                                <button><i class="fas fa-search"></i></button>
+                                <input type="text" placeholder="何をお探しですか?">
+                            </div>
+                        </form>
+                        <div class="category-tabs">
+                            <p class="tab"><i class="fas fa-crown me-2"></i>Most Popular</p>
+                            <p class="tab">PR</p>
+                            <p class="tab">連載一覧</p>
+                            <p class="tab">イベント情報</p>
+                            <p class="tab">Web制作</p>
+                            <p class="tab">最も人気のある</p>
+                            <p class="tab">テクノロジー</p>
+                            <p class="tab">Technology</p>
+                            <p class="tab">AI</p>
+                            <p class="tab">SEO対策</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="row g-4">
+            <div class="col-md-4 col-12">
+                <div class="box1">
+                    <h1>PRODUCT</h1>
+                    <p>プロダクト</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box2">
+                    <h1>SOLUTION</h1>
+                    <p>課題から探す</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box3">
+                    <h1>Resource</h1>
+                    <p>リソース</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box4">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box5">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box6">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="box7">
+                    <p style="padding-left:30px;">企業情報</p>
+                    <p style="font-size: small; color: #db2c36;">Copyright dmg @Baryon Partners Corporation All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //blog page dynamic content
+            var h1Element = document.getElementById('blogPageH1');
+            var textValues = ["リソース・ニュース", "連載一覧"]; // Add more values if needed
+            var currentIndex = 0;
+            var intervalId;
+
+            function showText() {
+                var text = textValues[currentIndex];
+                var i = 0;
+                intervalId = setInterval(function() {
+                    if (i <= text.length) {
+                        h1Element.textContent = text.slice(0, i);
+                        i++;
+                    } else {
+                        clearInterval(intervalId);
+                        setTimeout(hideText, 1000); // Wait for 1 second before hiding
+                    }
+                }, 100); // Adjust speed here
+            }
+
+            function hideText() {
+                var text = h1Element.textContent;
+                var i = text.length;
+                intervalId = setInterval(function() {
+                    if (i >= 0) {
+                        h1Element.textContent = text.slice(0, i);
+                        i--;
+                    } else {
+                        clearInterval(intervalId);
+                        currentIndex = (currentIndex + 1) % textValues.length;
+                        setTimeout(showText, 1000); // Wait for 1 second before showing next text
+                    }
+                }, 100); // Adjust speed here
+            }
+
+            showText();
+        });
+    </script>
+</body>
+
+</html>

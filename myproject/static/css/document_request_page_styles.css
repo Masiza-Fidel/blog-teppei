@@ -1,0 +1,377 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f2f2f2 !important;
+    padding: 10px 15px;
+
+}
+
+.documentRequestPage_header .navbar {
+    background-color: #000;
+    color: #fff !important;
+    border-radius: 0.5rem;
+    padding: 0 !important;
+}
+
+.documentRequestPage_header .navbar .navbar-brand img {
+    width: 80px;
+    margin-top: 5px;
+}
+
+.documentRequestPage_header .navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.documentRequestPage_header .navbar-nav.mr-auto {
+    margin: 0 auto;
+}
+
+.documentRequestPage_header .banner .box{
+    padding: 70px 0px 10px 70px;
+}
+
+.documentRequestPage_header .banner .box .content_part{
+    margin-bottom: 30px;
+}
+
+.documentRequestPage_header .banner .box .content_part h1{
+    font-weight: bolder;
+    font-size: 3.6rem;
+    margin-bottom: 30px;
+}
+
+.documentRequestPage_header .banner .box .content_part p{
+    font-weight: bolder;
+    font-size:0.78rem;
+}
+
+.documentRequestPage_header .banner .box .button_part{
+    margin-bottom: 20px;
+}
+
+.documentRequestPage_header .banner .box .button_part .btn1{
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    font-size: 8px;
+    transition: 0.5s;
+}
+
+.documentRequestPage_header .banner .box .button_part .btn1:hover{
+    background-color: #272727;
+}
+
+.documentRequestPage_header .banner .box .button_part .btn2{
+    padding: 15px;
+    background-color: #ffffff;
+    color: #000;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    font-size: 8px;
+    transition: 0.5s;
+}
+
+.documentRequestPage_header .banner .box .button_part .btn2:hover{
+    background-color: #fffbfb;
+}
+
+.documentRequestPage_header .banner .box .link_part{
+    text-align: end;
+}
+
+.doc_request_section{
+    background-color: #fff;
+    padding: 50px 70px;
+}
+
+.doc_request_section h1{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.doc_request_section .box p{
+    line-height: 2;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.doc_request_section .box a{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 0.5rem;
+}
+
+.doc_download_section{
+    background-color: #fff;
+    padding: 50px 70px;
+}
+
+.doc_download_section h1{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.doc_download_section p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.doc_download_section .form-container {
+    width: 60vw;
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.doc_download_section .form-container .form-group {
+    margin-bottom: 20px;
+}
+
+.doc_download_section .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.doc_download_section .form-container .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.doc_download_section .form-container .submit_btn{
+    text-align: center;
+}
+.doc_download_section .form-container .submit_btn .btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+footer{
+    padding-top: 30px;
+}
+
+footer .row .box1{
+    padding: 30px 20px;
+    background-color: #7030a0;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+footer .row .box2{
+    padding: 30px 20px;
+    background-color: #de5b9e;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+footer .row .box3{
+    padding: 30px 20px;
+    background-color: #0007b0;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+footer .row .box1 h1,
+footer .row .box2 h1,
+footer .row .box3 h1{
+    font-size: 0.78rem;
+    margin: 0;
+}
+
+footer .row .box1 p,
+footer .row .box2 p,
+footer .row .box3 p{
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+footer .row .box1 .arrow-btn,
+footer .row .box2 .arrow-btn,
+footer .row .box3 .arrow-btn{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+}
+
+footer .row .box1 .arrow-btn i{
+    color: #7030a0;
+}
+
+footer .row .box2 .arrow-btn i{
+    color: #de5b9e;
+}
+
+footer .row .box3 .arrow-btn i{
+    color: #0007b0;
+}
+
+footer .row .box4,
+footer .row .box5,
+footer .row .box6,
+footer .row .box7{
+    padding: 10px;
+    background-color: #d8d8d8;
+    border-radius: 0.5rem;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer .row .box4,
+footer .row .box5,
+footer .row .box6{
+    cursor: pointer;
+}
+
+footer .row .box7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .row .box7 p{
+    margin: 0;
+}
+
+footer .row .box7 p:nth-child(2){
+    font-size: 1.8rem;
+}
+
+
+/*Responsive*/
+@media (max-width:1300px){
+    
+}
+
+@media (max-width:1230px){
+    
+}
+
+@media screen and (max-width: 1070px){
+    footer .row .box7{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .contact_section .contact_box .contact_header{
+        width: 500px;
+    }
+
+    .contact_section .contact_box .contact_header h1{
+        font-size: 1.8rem;
+    }
+
+    .doc_download_section .form-container {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .documentRequestPage_header .banner .box{
+        padding: 30px 10px 10px 40px;
+    }
+
+    .contact_section .contact_box .row .box1{
+        border-right: none;
+    }
+
+    .contact_section .contact_box .contact_header{
+        width: 400px;
+    }
+
+    .contact_section .contact_box .contact_header h1{
+        font-size: 1.6rem;
+    }
+    
+    .contact_section .contact_box .row .box2{
+        border-right: none;
+    }
+
+    .doc_download_section .form-container {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .documentRequestPage_header .banner .box .content_part h1{
+        font-size: 2.8rem;
+    }
+
+    .doc_request_section .box{
+        text-align: center;
+    }
+
+    .marketing_section .row .box1 .content{
+        width: 450px;
+    }
+
+    .marketing_section .row .box1 .content h1{
+        font-size: 1.6rem;
+    }
+
+    .contact_section .contact_box .contact_header{
+        width: 250px;
+    }
+
+    .contact_section .contact_box .contact_header h1{
+        font-size: 1.2rem;
+    }
+
+    footer .row .box4 span,
+    footer .row .box5 span,
+    footer .row .box6 span{
+        font-size: .7rem;
+    }
+
+    .doc_download_section .form-container {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .marketing_section .row .box1 .content{
+        width: 300px;
+    }
+    
+    .marketing_section .row .box1 .content h1{
+        font-size: 2rem;
+    }
+
+    .doc_download_section{
+        padding: 50px 20px;
+    }
+}

@@ -1,0 +1,901 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description goes here.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="dgm">
+
+    <title>dgm | サービス</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/service_page_styles.css'%}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body >
+    <header class="servicepage_header scroll-reveal">
+        <nav class="navbar navbar-expand-lg navbar-dark scroll-reveal">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder ps-md-4" href="https://jp.dgmgr.com">
+                    <img src="img/logo.png" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="https://jp.dgmgr.com/service_page.html">サービス</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">課題から探す</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">プロダクト</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link" href="#">リソース</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="#">無料診断</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto me-lg-2">
+                            <a class="nav-link" href="#">お問合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner pt-4 scroll-reveal">
+            <div class="box">
+                <div class="content_part">
+                    <p class="first-p">デジタルマーケティング戦略コンサルティング</p>
+                    <h1>データドリブンなデジタルマーケティング</h1>
+                    <p class="second-p">市場や自社保有データをもとに効果の高いデジタルマーケティング戦略でサポートします</p>
+                </div>
+                <div class="button_part">
+                    <a href="#" class="btn btn1">お問合わせ <i class="fas fa-arrow-right ms-4"></i></a>
+                    <a href="#" class="btn btn2 ms-3"> 無料診断 <i class="fas fa-arrow-right ms-4"></i></a>
+                </div>
+                <div class="link_part">
+                    <a class="btn" href="#">概要</a>|<a class="btn" href="#">リサーチ</a>|<a class="btn" href="#">パフォーマンス検証</a>|<a class="btn" href="#">業務サイクル</a>|<a class="btn" href="#">利用ツール 概要</a>|<a class="btn" href="#">得意分野・業界</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="first_section scroll-reveal">
+            <div class="row g-4">
+                <div class="col-md-6 col-12 pt-md-5">
+                    <h2 class="text-sm-center">オープンな発想と、<br>高い技術力により、<br>すべての人々の <br>  創造活動に貢献し続ける</h2>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="first_p">クラスメソッドは、最終的にお客様が技術を活用しながらビジネスと成果を得られるようになることを目標に技術支援を行います。</p>
+                    <p class="second_p"><span class="first_span">ウェブ</span>,<span class="second_span">キャッシュ</span>,<span class="third_span">ショップ</span> ショップの4名様以上 わせて、差し追った課影の解決から丰業基盤の监化、 PDCAに辌がる施策の立案・実行まで、お客様が自分の手 で事業を育てていける橹境を整えます</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cloud_section scroll-reveal">
+            <div class="cloud_headline">
+                <h1>Cloud</h1>
+                <span>リサーチ</span>
+                <br>
+                <p>経営を、技術の土台で身軽にする</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-12">
+                    <div class="box1">
+                        <p>AWSと契約関係に起因し、仕事上ネットワーク上の安全と信頼を支援する もともと地域社会とビジネスを信じています。プロフェッショナルが 翻訳内容を客観的に保護・管理におけるヘルプをAWSに提供します。</p>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <ul>
+                                    <li><img src="img/list1.png" class="img-fluid" alt="logo">クラウド環境構築</li>
+                                    <li><img src="img/list2.png" class="img-fluid" alt="logo">クラウド環境構築</li>
+                                    <li><img src="img/list3.png" class="img-fluid" alt="logo">クラウド環境構築</li>
+                                </ul>
+                            </div>
+                           <div class="col-6">
+                                <ul>
+                                    <li><img src="img/list1.png" class="img-fluid" alt="logo">クラウド環境構築</li>
+                                    <li><img src="img/list2.png" class="img-fluid" alt="logo">クラウド環境構築</li>
+                                    <li><img src="img/list3.png" class="img-fluid" alt="logo">クラウド環境構築</li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <a href="#" class="btn">クラスタの詳細をビュー <i class="fas fa-copy"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="box2">
+                        <div class="row g-4">
+                            <div class="col-4">
+                                <img src="{% static 'img/aws.PNG' %}" class="img-fluid" alt="aws_logo">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="business_cycle_section scroll-reveal">
+            <h1>業務サイクル</h1>
+            <div class="row g-3">
+                <div class="col-md-6 col-12">
+                    <ul>
+                        <li><img src="{% static 'img/list4.png' %}" class="img-fluid" alt="logo">け投買の成果を早める内型化サポート</li>
+                        <li><img src="{% static 'img/list4.png' %}" class="img-fluid" alt="logo">自是を日綿にした技㕶支捂</li>
+                        <li><img src="{% static 'img/list4.png' %}" class="img-fluid" alt="logo">铝䚹不足からくる不安を解消</li>
+                        <li><img src="{% static 'img/list4.png' %}" class="img-fluid" alt="logo">掘大な掅報発信を通して更斯されつつけるナレッジ</li>
+                
+                    </ul>
+                </div>
+                <div class="col-md-6 col-12">
+                    <ul>
+                        <li><img src="{% static 'img/list4.png' %}" class="img-fluid" alt="logo">け投買の成果を早める内型化サポート</li>
+                      <li><img src="{% static 'img/list4.png' %}" class="img-fluid" alt="logo">自是を日綿にした技㕶支捂</li>
+                      <li><img src="{% static 'img/list4.png' %}" class="img-fluid" alt="logo">铝䚹不足からくる不安を解消</li>
+                      <li><img src="{% static 'img/list4.png' %}" class="img-fluid" alt="logo">掘大な掅報発信を通して更斯されつつけるナレッジ</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="challenges_section scroll-reveal" style="margin-top:60px;">
+            <h1>こんな課題ありませんか？</h1>
+            <div class="row gy-4">
+                
+                <div class="col-lg-3 col-md-4 col-6" style="display:flex">
+                    <div class="chatbox" style="margin-left:40px; width:100%; min-width:210px; height:100%; max-height:220px;">
+                        <div class="message received">
+                            <p>自社サイトへ集客できない</p>
+                        </div>
+                        <div class="message sent">
+                            <p>まずはメールか電話でお問い合わせください。担当者より折り返しご連絡させていただきます。</p>
+                        </div>
+                    </div>
+                    <div class="chatbox"  style="margin-left:40px; width:100%; min-width:210px; height:100%; max-height:220px;">
+                        <div class="message received">
+                            <p>自社サイトへ集客できない</p>
+                        </div>
+                        <div class="message sent">
+                            <p>まずはメールか電話でお問い合わせください。担当者より折り返しご連絡させていただきます。</p>
+                        </div>
+                    </div>
+                    <div class="chatbox" style="margin-left:40px; width:100%; min-width:210px; height:100%; max-height:220px;">
+                        <div class="message received">
+                            <p>自社サイトへ集客できない</p>
+                        </div>
+                        <div class="message sent">
+                            <p>まずはメールか電話でお問い合わせください。担当者より折り返しご連絡させていただきます。</p>
+                        </div>
+                    </div>
+                    <div class="chatbox" style="margin-left:40px; width:100%; min-width:210px; height:100%; max-height:220px;">
+                        <div class="message received">
+                            <p>自社サイトへ集客できない</p>
+                        </div>
+                        <div class="message sent">
+                            <p>まずはメールか電話でお問い合わせください。担当者より折り返しご連絡させていただきます。</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="section-phase scroll-reveal" style="margin-top:60px;">
+           
+            <div class="content">
+                <div class="arrow-container">
+                    <div class="arrow">&lt;</div>
+                    <div class="arrow">&lt;</div>
+                    <div class="arrow">&lt;</div>
+                  </div>                  
+                  
+                <h1>Welcome to Our Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="cards">
+                    <div class="card">
+                        <h2>Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Word</p>
+                        <button class="button">Button</button>
+                    </div>
+                    <div class="card">
+                        <h2>Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Word</p>
+                        <button class="button">Button</button>
+                    </div>
+                    <div class="card">
+                        <h2>Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Word</p>
+                        <button class="button">Button</button>
+                    </div>
+                    <div class="card">
+                        <h2>Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Word</p>
+                        <button class="button">Button</button>
+                    </div>
+                    <div class="card">
+                        <h2>Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Word</p>
+                        <button class="button">Button</button>
+                    </div>
+                    <div class="card">
+                        <h2>Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Word</p>
+                        <button class="button">Button</button>
+                    </div>
+                    <!-- Repeat for other cards -->
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section class="pricing_section scroll-reveal" style="margin-top:60px;">
+            <div class="subscription-options">
+                <div class="option">
+                    <input type="radio" id="one-time" name="subscription" value="one-time">
+                    <label for="one-time">一回契約</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="monthly" name="subscription" value="monthly" checked>
+                    <label for="monthly">月額契約 <span class="discount">20% OFF</span></label>
+                </div>
+            </div>
+
+            <h1>プラン・価格</h1>
+            <h3>一回毎の契約になります３ヶ月毎から年一 一回毎の契約になります３ヶ月毎<br>から年一回まで、</h3>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box another_box">
+                        <p class="first_p">Starter Plan</p>
+                        <h2>スタータープラン</h2>
+                        <h3 id="starter-plan-price"></h3>
+                        <div class="subscribe_btn">
+                            <a class="btn" href="">無料診断</a>
+                        </div>
+                        <p class="second_p">回毎の契約になります３ヶ月毎から年一回まで、</p>
+                        <div class="service_content">
+                            <h4><i class="fa fa-minus me-1"></i>Free mockup items and templates</h4>
+                            <p class="third_p">You can use all free mockup items and templates to experience how Artboard Studio works.</p>
+                            <h4><i class="fa fa-minus me-1"></i>3 Projects</h4>
+                            <p class="third_p">You can create up to three projects, create public links and share with other people.</p>
+                            <h4><i class="fa fa-minus me-1"></i>Export in low resolution</h4>
+                            <p class="third_p">You can export images/videos at max 720px width. Bigger sized artboards or images will be resized.</p>
+                            <h4><i class="fa fa-minus me-1"></i>Personal license</h4>
+                            <p class="third_p">You can only use your exported designs for personal, hobby, and educational purposes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box">
+                        <p class="first_p">Lite Plan</p>
+                        <h2>ライトプラン</h2>
+                        <h3 id="lite-plan-price"></h3>
+                        <div class="subscribe_btn">
+                            <a class="btn" href="">無料診断</a>
+                        </div>
+                        <p class="second_p">回毎の契約になります３ヶ月毎から年一回まで、</p>
+                        <div class="service_content">
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Unlimited projects</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Premium mockups and content</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Premium templates</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Commercial license</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Project versions</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Project presentation</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Branding components</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box">
+                        <p class="first_p">Professional Plan</p>
+                        <h2>調査・分析</h2>
+                        <h3 id="professional-plan-price"></h3>
+                        <div class="subscribe_btn">
+                            <a class="btn" href="">無料診断</a>
+                        </div>
+                        <p class="second_p">回毎の契約になります３ヶ月毎から年一回まで、</p>
+                        <div class="service_content">
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Unlimited projects</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Premium mockups and content</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Premium templates</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Commercial license</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Project versions</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Project presentation</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Branding components</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box">
+                        <p class="first_p">Enterprise Plan</p>
+                        <h2>調査・分析</h2>
+                        <h3 id="enterprise-plan-price"></h3>
+                        <div class="subscribe_btn">
+                            <a class="btn" href="">無料診断</a>
+                        </div>
+                        <p class="second_p">回毎の契約になります３ヶ月毎から年一回まで、</p>
+                        <div class="service_content">
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Unlimited projects</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Premium mockups and content</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Premium templates</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Commercial license</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Project versions</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Project presentation</h4>
+                            <h4 class="mb-4"><i class="fa-solid fa-check me-1"></i>Branding components</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="display:flex; margin-top:60px;">
+            <h1>お問い合わせからの流れ</h1>
+
+        </div>
+
+        <section class="flow_from_inquiry_section scroll-reveal" style="margin-top:90px;">
+           
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="inner_box">
+                            <h2>01</h2>
+                            <h4>お問い合せ</h4>                
+                            <p class="kop">まずはメールか電話でお問い合わせください。<br>担当者より折り返しご連絡させていただきます。</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="inner_box">
+                            <h2>02</h2>
+                            <h4>ヒアリング（打ち合わせ）</h4>
+                        <p>お客様の導入目的や課題をお伺いさせていただき、<br>最適な運用方法をご提案させていただきます。</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="inner_box">
+                            <h2>03</h2>
+                            <h4>お問い合せ</h4>
+                        <p>ヒアリング内容をもとにお見積もりを作成いたします。<br>同意いただけましたらご契約となります。</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="inner_box">
+                            <h2>04</h2>
+                            <h4>お問い合せ</h4>
+                            <p>運用にするアカウントを設計させていただきます。</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="inner_box">
+                            <h2>05</h2>
+                            <h4>お問い合せ</h4>
+                            <p>運用にするアカウン<br>トを設計させていただきます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="inner_box">
+                            <h2>06</h2>
+                            <h4>お問い合せ</h4>
+                            <p>運用にするアカウン<br>トを設計させていただきます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="button-section scroll-reveal"  style="margin-top: 120px;">
+
+            <div class="button-container">
+               <div class="markco">
+                    <button class="button1" style="border-radius: 4px; height:100%; max-height:140px;">見積もり依頼</button>
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="markco2">
+                    <button class="button2" style="border-radius: 4px; height:100%; max-height:140px;" >無料相談</button>
+                </div>
+            </div>
+        </section>
+        
+          
+          
+        
+
+
+        <section class="feedback_section scroll-reveal" style="margin-top:90px;">
+            <h1>よくある質問</h1>
+            <div class='faq'>
+                <input type="checkbox" id="faq-a" class="faq-toggle">
+                <label for="faq-a">
+                    <h3 class="faq-heading">企業名</h3>
+                    <p class="faq-text">株式会社デジタルマーケティング</p>
+                </label>
+                <input type="checkbox" id="faq-b" class="faq-toggle faq-toggle2">
+                <label for="faq-b">
+                    <h3 class="faq-heading">企業名</h3>
+                    <p class="faq-text">株式会社デジタルマーケティング</p>
+                </label>
+                <input type="checkbox" id="faq-c" class="faq-toggle faq-toggle3">
+                <label for="faq-c">
+                    <h3 class="faq-heading">企業名</h3>
+                    <p class="faq-text">株式会社デジタルマーケティング</p>
+                </label>
+                <input type="checkbox" id="faq-d" class="faq-toggle faq-toggle4">
+                <label for="faq-d">
+                    <h3 class="faq-heading">企業名</h3>
+                    <p class="faq-text">株式会社デジタルマーケティング</p>
+                </label>
+                <input type="checkbox" id="faq-e" class="faq-toggle faq-toggle5">
+                <label for="faq-e">
+                    <h3 class="faq-heading">関連サービス</h3>
+                    <p class="faq-text">WEBサイト開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス 開発サービス サービス 開発サービス 開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　</p>
+                </label>
+                <input type="checkbox" id="faq-f" class="faq-toggle faq-toggle6">
+                <label for="faq-f">
+                    <h3 class="faq-heading">業界特化サービス</h3>
+                    <p class="faq-text">WEBサイト開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス</p>
+                </label>
+                <input type="checkbox" id="faq-g" class="faq-toggle faq-toggle7">
+                <label for="faq-g">
+                    <h3 class="faq-heading">当社他サービス</h3>
+                    <p class="faq-text">WEBサイト開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス</p>
+                </label>
+            </div>
+        </section>
+
+        <section class="service_list_section scroll-reveal" style="margin-top:80px;">
+            <div style="display:flex;">
+                <h1>サービス一覧</h1>          <h2 style="margin-left:20px;">すべてみる</h2>
+            </div>
+            <div class="row g-4" id="service_list_columnsContainer">
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                      
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                      
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                      
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                      
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5">
+                <button id="seeMoreBtnForServiceList" class="btn" onclick="showMoreServiceListColumns()">もっとみる</button>
+            </div>
+        </section>
+
+        <section class="notice_section scroll-reveal" style="margin-top:100px;">
+            <div style="display:flex;">
+                <h1>お知らせ一覧</h1>
+                 <h3 style="margin-left: 30px;">すべてみる</h3>
+            </div>
+            <div class='notice_list'>
+                {% for news_item in news %}
+                <label for="notice_list-b">
+                <h3 class="notice_list-heading">{{ news_item.created_at }} <span>{{ news_item.title }}</span></h3>
+                <h5>{{ news_item.author_name }}</h5>
+                <p>{{news_item.content | safe}}</p>
+                  <!-- You can include other fields of news as needed -->
+                 </label>
+                 {% endfor %}   
+                <hr style="color:black;">
+                <input type="checkbox" id="notice_list-b" class="notice_list-toggle notice_list-toggle2">
+                <label for="notice_list-b">
+                    <h3 class="notice_list-heading">2023.12.26 <span>プレスリリース</span><span>プレスリリース</span></h3>
+                    <h5>ホームページリニューアルをしました</h5>
+
+                </label>
+                <hr style="color:black;">
+
+                <input type="checkbox" id="notice_list-c" class="notice_list-toggle notice_list-toggle3">
+                <label for="notice_list-c">
+                    <h3 class="notice_list-heading">2023.12.26 <span>プレスリリース</span><span>プレスリリース</span></h3>
+                    <h5>ホームページリニューアルをしました</h5>
+
+                </label>
+                <hr style="color:black;">
+
+            </div>
+        </section>
+        
+        
+                
+              
+
+        <section class="resource_section scroll-reveal" style="margin-top:100px;">
+            <h1 class="resource_section_header">リソース</h1>
+            <div class="row gy-4" id="columnsContainer">
+                {% for blog in blogs %}
+                <div class="col-md-4 col-12">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">{{ blog.title }}</p>
+                        <p class="second-p">{{ blog.author_name }}</p>
+                        <p class="third-p">{{ blog.content | safe }}</p>
+                    </div>
+                </div>
+                {% endfor %} 
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box1"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 resource_col">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO </p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+                <!-- Repeat the above two blocks two more times to display a total of 4 cards -->
+        
+            </div>
+            <div class="d-flex justify-content-center pt-5">
+                <button id="seeMoreBtnForResource" class="btn" onclick="showMoreResourceColumns()">もっとみる</button>
+            </div>
+        </section>
+        
+
+        <section class="related_services_section scroll-reveal" style="margin-top:100px;">
+            <h1>関連サービス一覧</h1>
+            <div class='related_services'>
+                <input type="checkbox" id="related_services-a" class="related_services-toggle">
+                <label for="related_services-a">
+                    <h3 class="related_services-heading">関連サービス</h3>
+                    <h5>株式会社デジタルマーケティング</h5>
+                </label>
+                <input type="checkbox" id="related_services-b" class="related_services-toggle related_services-toggle2">
+                <label for="related_services-b">
+                    <h3 class="related_services-heading">業界特化サービス</h3>
+                    <h5>株式会社デジタルマーケティング</h5>
+                </label>
+                <input type="checkbox" id="related_services-c" class="related_services-toggle related_services-toggle3">
+                <label for="related_services-c">
+                    <h3 class="related_services-heading">当社他サービス</h3>
+                    <h5>株式会社デジタルマーケティング</h5>
+
+                </label>
+                <input type="checkbox" id="related_services-d" class="related_services-toggle related_services-toggle4">
+                <label for="related_services-d">
+                    <h3 class="related_services-heading">関連サービス</h3>
+                    <h5>株式会社デジタルマーケティング</h5>
+
+                </label>
+                <input type="checkbox" id="related_services-e" class="related_services-toggle related_services-toggle5">
+                <label for="related_services-e">
+                    <h3 class="related_services-heading">業界特化サービス</h3>
+                    <h5>WEBサイト開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス</h5>
+                </label>
+                <input type="checkbox" id="related_services-f" class="related_services-toggle related_services-toggle6">
+                <label for="related_services-f">
+                    <h3 class="related_services-heading">当社他サービス</h3>
+                    <h5>WEBサイト開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス　開発サービス</p>
+                </label>
+            </div>
+        </section>
+        
+        <section class="marketing_section scroll-reveal" style="margin-top:120px;">
+            <div class="row gy-4 gx-3">
+                <div class="col-12">
+                    <div class="box1">
+                        <div class="content">
+                            <h1>DATA-DRIVEN MARKETING AGENCY</h1>
+                            <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box2">
+                        <div class="number">01</div>
+                        <div class="image">
+                            <img src="{% static 'img/service1.png' %}" alt="service_image">
+
+                        </div>
+                        <div class="text">
+                            <h4>Strategy</h4>
+                            <p>戦略サポート</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box3">
+                        <div class="number">02</div>
+                        <div class="image">
+                            <img src="{% static 'img/service1.png' %}" alt="service_image">
+
+                        </div>
+                        <div class="text">
+                            <h4>WEBSITE</h4>
+                            <p>ウェブサイト</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box4">
+                        <div class="number">03</div>
+                        <div class="image">
+                            <img src="{% static 'img/service1.png' %}" alt="service_image">
+
+                        </div>
+                        <div class="text">
+                            <h4>SNS</h4>
+                            <p>SNS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box5">
+                        <div class="number">04</div>
+                        <div class="image">
+                            <img src="{% static 'img/service1.png' %}" alt="service_image">
+
+                        </div>
+                        <div class="text">
+                            <h4>APPLICATION</h4>
+                            <p>アプリケーション</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_section scroll-reveal" style="margin-top:100px;">
+            <div class="contact_box">
+                <div class="contact_header">
+                    <h1>業界・規模問わず分析1,000社以上、 まずはお気軽にご相談ください</h1>
+                </div>
+                <div class="container">
+                    <div class="row g-4 d-flex justify-content-center">
+                        <div class="col-md-4 col-12 box1">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                        <div class="col-md-4 col-12 box2">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                        <div class="col-md-4 col-12 box3">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer  class="scroll-reveal"    style="margin-top:100px;">
+        <div class="row g-4">
+            <div class="col-md-4 col-12">
+                <div class="box1">
+                    <h1>PRODUCT</h1>
+                    <p>プロダクト</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box2">
+                    <h1>SOLUTION</h1>
+                    <p>課題から探す</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box3">
+                    <h1>Resource</h1>
+                    <p>リソース</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box4">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box5">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box6">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="box7">
+                    <p style="padding-left:30px;">企業情報</p>
+                    <p style="font-size: small; color: #db2c36;">Copyright dmg @Baryon Partners Corporation All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+</body>
+
+</html>

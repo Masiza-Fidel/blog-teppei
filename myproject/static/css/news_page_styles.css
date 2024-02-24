@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d8e2f3 !important;
+    padding: 10px 15px;
+}
+
+.newsPage_header .navbar {
+    background-color: #0007b0;
+    color: #fff !important;
+    border-radius: 0.5rem;
+    padding: 0 !important;
+}
+
+.newsPage_header .navbar .navbar-brand img {
+    width: 80px;
+    margin-top: 5px;
+}
+
+.newsPage_header .navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.newsPage_header .navbar-nav.mr-auto {
+    margin: 0 auto;
+}
+
+.newsPage_header .banner .box{
+    padding: 70px 0px 10px 70px;
+}
+
+.newsPage_header .banner .box .content_part{
+    margin-bottom: 30px;
+}
+
+.newsPage_header .banner .box .content_part h1{
+    font-weight: bolder;
+    font-size: 3.6rem;
+    margin-bottom: 50px;
+}
+
+.newsPage_header .banner .box .content_part p{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.news_section{
+    background-color: #fff;
+    padding: 50px 70px;
+}
+
+.news_section .news_buttons button{
+    padding: 10px 40px;
+    border-radius: 0.5rem;
+    background-color: #d8e2f3;
+    font-weight: bolder;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.news_section .news_buttons button.active{
+    background-color: #000;
+    color: #fff;
+}
+
+.news_section .notice_list {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.news_section .notice_list-heading {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 10px 0 10px 14px;
+    border-left: 4px solid #de5b9e;
+}
+
+.news_section .notice_list-heading span{
+    background-color: #de5b9e;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    margin: 0 5px 0 5px;
+    position: relative;
+    top: -2px;
+}
+
+.news_section .notice_list-text {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.news_section .notice_list label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.news_section .notice_list-toggle {
+    display: none;
+}
+
+footer{
+    padding-top: 30px;
+}
+
+footer .row .box1{
+    padding: 30px 20px;
+    background-color: #7030a0;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+footer .row .box2{
+    padding: 30px 20px;
+    background-color: #de5b9e;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+footer .row .box3{
+    padding: 30px 20px;
+    background-color: #0007b0;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+footer .row .box1 h1,
+footer .row .box2 h1,
+footer .row .box3 h1{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+footer .row .box1 p,
+footer .row .box2 p,
+footer .row .box3 p{
+    font-size: .8rem;
+    margin: 0;
+}
+
+footer .row .box1 .arrow-btn,
+footer .row .box2 .arrow-btn,
+footer .row .box3 .arrow-btn{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+}
+
+footer .row .box1 .arrow-btn i{
+    color: #7030a0;
+}
+
+footer .row .box2 .arrow-btn i{
+    color: #de5b9e;
+}
+
+footer .row .box3 .arrow-btn i{
+    color: #0007b0;
+}
+
+footer .row .box4,
+footer .row .box5,
+footer .row .box6,
+footer .row .box7{
+    padding: 10px;
+    background-color: #d8d8d8;
+    border-radius: 0.5rem;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer .row .box4,
+footer .row .box5,
+footer .row .box6{
+    cursor: pointer;
+}
+
+footer .row .box7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .row .box7 p{
+    margin: 0;
+}
+
+footer .row .box7 p:nth-child(2){
+    font-size: .8rem;
+}
+
+
+/*Responsive*/
+@media (max-width:1300px){
+    
+}
+
+@media (max-width:1230px){
+    
+}
+
+@media screen and (max-width: 1070px){
+    footer .row .box7{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px){
+
+}
+
+@media screen and (max-width: 767px){
+    .newsPage_header .banner .box{
+        padding: 30px 10px 10px 40px;
+    }
+
+    .news_section{
+        padding: 50px 40px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .newsPage_header .banner .box .content_part h1{
+        font-size: 2.8rem;
+    }
+
+    footer .row .box4 span,
+    footer .row .box5 span,
+    footer .row .box6 span{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+}

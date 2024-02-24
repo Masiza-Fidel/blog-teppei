@@ -1,0 +1,800 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description goes here.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="dgm">
+
+    <title>dgm | 家</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{%static 'img/favicon.icon'%}" type="image/x-icon">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="{%static 'css/service_page_styles.css'%}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="homepage_header">
+      
+                 
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scroll-reveal">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder ps-md-4" href="https://jp.dgmgr.com">
+                    <img src="{% static 'img/logo.png' %}" class="img-fluid">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="{% url 'services' %}">サービス</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">課題から探す</a>
+                            <div class="dropdown-menu"  id="dropper"  aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" id="sub-droper"   href="#">Dropdown Item 1</a>
+                                <a class="dropdown-item" id="sub-droper" href="#">Dropdown Item 2</a>
+                                <a class="dropdown-item" id="sub-droper" href="#">Dropdown Item 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">プロダクト</a>
+                            <div class="dropdown-menu" id="dropper" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item"  id="sub-droper" href="#">Dropdown Item 1</a>
+                                <a class="dropdown-item"id="sub-droper" href="#">Dropdown Item 2</a>
+                                <a class="dropdown-item"  id="sub-droper" href="#">Dropdown Item 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">リソース</a>
+                            <div class="dropdown-menu" id="dropper"  aria-labelledby="navbarDropdown3">
+                                <a class="dropdown-item" id="sub-droper" href="#">Dropdown Item 1</a>
+                                <a class="dropdown-item"id="sub-droper" href="#">Dropdown Item 2</a>
+                                <a class="dropdown-item"  id="sub-droper"  href="#">Dropdown Item 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="#">無料診断</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-4 mx-auto me-lg-2">
+                            <a class="nav-link" href="#">お問合わせ</a>
+                        </li>
+                        <li class="nav-item ms-lg-4 mx-auto me-lg-2">
+                            <a class="nav-link" href="{% url 'admin:index' %}">管理者ログイン</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+       
+
+        <div class="banner pt-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-12 first-part scroll-reveal " style="margin-top:100px;">
+                    <div class="header-section">
+                        <h1>情報をもっと <br>戦略の中心に</h1>
+                    </div>
+                    <div class="paragraph-section py-3">
+                        <p>調査、分析、検証、改善が得意な<br> 総合デジタルマーケティングサービス</p>
+                    </div>
+                    <div class="buttom-section">
+                        <a href="#" class="btn btn1">お問い合わせ <i class="fas fa-arrow-right ms-3"></i></a>
+                        <a href="#" class="btn btn2 ms-3">私たちの特徴 <i class="fas fa-arrow-right ms-3"></i></a>
+                    </div>
+                </div>
+              
+                  
+
+
+
+
+                <div class="col-lg-8 col-md-7 col-12 second-part">
+                    <div class="row g-2  scroll-reveal" >
+                        <div class="col-12" >
+                            <div class="box1 scroll-reveal" id="jose" >
+                                <div class="box-header" >
+                                    <div class="gif-container">
+                                        <img src="{% static 'img/banner.gif' %}" alt="Banner image">
+
+                                    </div>
+                                    <h2>STRATEGY</h2>
+                                    <p>戦略サポート</p>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="col-lg-6 col-12" >
+                            <div class="box2 scroll-reveal" id="jote">
+                                <div class="box-header">
+                                    <div class="gif-container">
+                                        <img src="{% static 'img/landing-page.gif' %}" alt="Banner image">
+                                    </div>
+                                    <h2>WEBSITE</h2>
+                                    <p>ウェブサイト</p>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-lg-3 col-6" >
+                             <div class="box3 scroll-reveal" id="jole">
+                                 <div class="box-header">
+                                     <div class="gif-container">
+                                        <img src="{% static 'img/social-media.gif' %}" alt="social image">
+                                     </div>
+                                     <h2>SNS</h2>
+                                     <p>SNS</p>
+                                 </div>
+                             </div>
+                          </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="box4 scroll-reveal" id="joko">
+                                <div class="box-header">
+                                    <div class="gif-container">
+                                        <img src="{% static 'img/mobile-apps.gif' %}" alt="mobile image">
+                                    </div>
+                                    <h2>APP</h2>
+                                    <p>アプリケーション</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 box5 mt-3" id="konot">
+                            <div class="b1"></div>
+                            <div class="b2"></div>
+                            <div class="b3" ></div>
+                            <div class="b2" ></div>
+                            <div class="b1" ></div>
+                            <div class="b4"></div>
+                            <div class="b1"></div>
+                            <div class="b3 x2"></div>
+                            <div class="b2 x2"></div>
+                            <div class="b1 x2"></div>
+                            <div class="b3 d-lg-block d-none"></div>
+                            <div class="b2 d-lg-block d-none"></div>
+                            <div class="b3 d-lg-block d-none"></div>
+                            <div class="b4 d-lg-block d-none"></div>
+                            <div class="b1 d-lg-block d-none x1"></div>
+                            <div class="b4 d-lg-block d-none x1"></div>
+                            <div class="b3 d-lg-block d-none x1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+  <style>
+
+
+#dropper{
+    width:100%;
+    min-width:500px;
+    background-color: #db2c36;
+}
+#sub-droper{
+    color:white;
+    background-color: #db2c36;
+}
+
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.box5 .b1,
+.box5 .b2,
+.box5 .b3,
+.box5 .b4 {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background-color: #ccc; /* Adjust as needed */
+    margin-right: 5px; /* Adjust as needed */
+    animation: moveLeft 5s linear infinite; /* Adjust duration as needed */
+}
+
+.box5 .x2 {
+    animation-duration: 5s; /* Double duration */
+}
+
+/* Additional styles for responsive display */
+
+
+  </style>
+
+
+      
+
+
+    <main>
+        <section class="service_section scroll-reveal" >
+            <div class="row g-3">
+                <div class="col-md-6 col-12">
+
+                    <div class="box1">
+                        <h2>DATA-DRIVEN MARKETING</h2>
+                        <p>市場・競合他社の調査から自社データを用いた戦略立案から効果検証・リターゲティングまで効果が見えるマーケティングの実施をサポートします。成長を続ける事業のデータに基づく意思決定とマーケティング活動をサポートします。</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="box2">
+                        <h2>データに価値を、 挑戦を効果的に</h2>
+                    </div>
+                </div>
+            </div>
+            <h1 class="service_section_header scroll-reveal">サービス</h1>
+            <div class="container-fluid scroll-reveal">
+                <div class="row g-4 scroll-reveal">
+                    <div class="col-md-6 col-12">
+                        <div class="box3" >
+                            <div class="gif-container" >
+                                <img src="{% static 'img/banner.gif' %} " style=" margin-top:10px;" alt="mobile image">
+
+                            </div>
+                            <div class="row">                                        
+
+                                <div class="col-2"><img src="{% static 'img/service1.png'%}" class="img-fluid" alt="service1 image"></div>
+                                <div class="col-9">
+                                    <h3>戦略サポート</h3>
+                                    <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザイン</p>
+                                </div>
+                                <div class="col-1"><i class="fas fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="box4">
+                            <div class="gif-container">
+                                <img src="{% static 'img/landing-page.gif' %} " style=" margin-top:10px;" alt="mobile image">
+
+                            </div>
+                            <div class="row">
+                                <div class="col-2"><img src="{% static 'img/service2.png'%}" class="img-fluid" alt="service1 image"></div>
+                                <div class="col-9">
+                                    <h3>AWS戦略サポート</h3>
+                                    <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザイン</p>
+                                </div>
+                                <div class="col-1"><i class="fas fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="box5" >
+                            <div class="gif-container">
+                                <img src="{% static 'img/social-media.gif' %} " style=" margin-top:10px;" alt="mobile image">
+
+                            </div>
+                            <div class="row">
+                                <div class="col-2"><img src="{% static 'img/service1.png'%}" class="img-fluid" alt="service1 image"></div>
+
+                                <div class="col-9">
+                                    <h3>戦略サポート</h3>
+                                    <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザイン</p>
+                                </div>
+                                <div class="col-1"><i class="fas fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="box6">
+                            <div class="gif-container" >
+                                <img src="{% static 'img/mobile-apps.gif' %}" alt="mobile image">
+
+                            </div>
+                            <div class="row">
+                                <div class="col-2"><img src="{% static 'img/service3.png'%}" class="img-fluid" alt="service1 image"></div>
+
+                                <div class="col-9">
+                                    <h3>Line戦略サポート</h3>
+                                    <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザイン</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 scroll-reveal">
+                <div class="row g-4 scroll-reveal" >
+                    <div class="col-md-3 col-6">
+                        <div class="box7" style="font-weight: bold;"><i class="fas fa-desktop ms-2"></i> コンピューター</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box7" style="font-weight: bold;"><i class="fas fa-book ms-2"></i> コンピューター</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box7" style="font-weight: bold;"><i class="fas fa-cogs ms-2"></i> コンピューター</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box7" style="font-weight: bold;"><i class="fas fa-book ms-2"></i> コンピューター</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-weight: bold;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="box8">
+                            <span style="font-size: bolder;">戦略サポート</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resource_section scroll-reveal">
+            <div style="display:flex;">
+                <h1 class="resource_section_header">リソース</h1>
+                <button class="buttola">もっとみる</button>
+  
+            </div>
+           
+            <div class="row gy-4">
+                {% for blog in blogs %}
+                <div class="col-md-4 col-12">
+                    <div class="box2"></div>
+                    <div class="content px-2">
+                        <p class="first-p"><a href="{% url 'blog_detail' pk=blog.pk %}">{{ blog.title }}</a></p>
+                        <p class="second-p">{{ blog.author_name }}</p>
+                        <p class="third-p">{{ blog.content | safe }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+
+                 <div class="col-md-4 col-12">
+                     <div class="box2"></div>
+                       <div class="content px-2">
+                            <p class="first-p">STRATEGY - SEO</p>
+                            <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                            <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                       </div>
+                    </div>
+
+
+                <div class="col-md-4 col-12">
+                    <div class="box3"></div>
+                    <div class="content px-2">
+                        <p class="first-p">STRATEGY - SEO</p>
+                        <p class="second-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の</p>
+                        <p class="third-p">顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイでデザインし、企業価値の向上と事業成長を支援 . . . . .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+
+        <section class="service_list_section scroll-reveal">
+            <h1 style="text-align:left; " class="scroll-reveal">当社提供関連サービス一覧</h1>
+            <div class="row g-4" id="service_list_columnsContainer">
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 service_list_col">
+                    <div class="box">
+                        <h2>キーワード分析</h2>
+                        <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と事業成長を支援するデザイン＆でデザインし、企業価値の向上</p>
+                        <strong>もっとみる</strong>
+                        <div class="tool_btn">
+                            <a href="" class="btn">6 tools</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5">
+                <button id="seeMoreBtnForServiceList" class="btn" onclick="showMoreServiceListColumns()">もっとみる</button>
+            </div>
+        </section>
+
+      
+        <div class="py-4 scroll-reveal">
+            <div class="row g-4" >
+                <h2 class="text-align:left;">課題から探す</h2>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-weight: bold;">戦略サポート</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="box6">
+                        <span style="font-size: bolder;">戦略サポート</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+
+                  .box6 {
+                      background-color: white;
+                      border-radius: 8px; /* Add border radius for slightly curved corners */
+                     padding: 20px;
+                       text-align: center;
+                       width: 100%;
+                        height: 87%;
+                      box-sizing: border-box;
+                         box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+                           }
+        </style>
+
+
+
+
+
+
+<section class="notice_section scroll-reveal">
+    <h1 style="text-align: left;">お知らせ一覧</h1>
+    <div class='notice_list'>
+        {% for article in news %}
+       <label for="notice_list-b">
+        
+       <h3 class="notice_list-heading">{{ article.created_at }} <a href="{% url 'article_detail' pk=article.pk %}">{{ article.title }}</a></h3>
+       <h5>{{ article.author_name }}</h5>
+       <p>{{article.content | safe}}</p>
+         <!-- You can include other fields of news as needed -->
+        </label>
+        {% endfor %}      
+        <input type="checkbox" id="notice_list-c" class="notice_list-toggle notice_list-toggle3">
+        <label for="notice_list-c">
+            <h3 class="notice_list-heading">2023.12.26 <span>プレスリリース</span><span>プレスリリース</span></h3>
+            <h5>ホームページリニューアルをしました</h5>
+
+        </label>
+    </div>
+</section>
+
+
+
+
+
+       
+
+        <section class="marketing_section scroll-reveal" style="margin-top: 70px;">
+            <div class="row gy-4 gx-3">
+                <div class="col-12">
+                    <div class="box1">
+                        <div class="content">
+                            <h1>DATA-DRIVEN MARKETING AGENCY</h1>
+                            <p>顧客体験からコミュニケーションまで一気通貫でデザインし、企業価値の向上と</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box2">
+                        <div class="number">01</div>
+                        <div class="image">
+                            <img src="{% static 'img/service1.png'%}" alt="service_image">
+                        </div>
+                        <div class="text">
+                            <h4>Strategy</h4>
+                            <p>戦略サポート</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box3">
+                        <div class="number">02</div>
+                        <div class="image">
+                            <img src="{% static 'img/service1.png'%}" alt="service_image">
+
+                        </div>
+                        <div class="text">
+                            <h4>WEBSITE</h4>
+                            <p>ウェブサイト</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box4">
+                        <div class="number">03</div>
+                        <div class="image">
+                            <img src="{% static 'img/service1.png'%}" alt="service_image">
+
+                        </div>
+                        <div class="text">
+                            <h4>SNS</h4>
+                            <p>SNS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box5">
+                        <div class="number">04</div>
+                        <div class="image">
+                            <img src="{% static 'img/service1.png'%}" alt="service_image">
+
+                        </div>
+                        <div class="text">
+                            <h4>APPLICATION</h4>
+                            <p>アプリケーション</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_section scroll-reveal" style="margin-top:70px;">
+            <div class="contact_box">
+                <div class="contact_header">
+                    <h1>業界・規模問わず分析1,000社以上、 まずはお気軽にご相談ください</h1>
+                </div>
+                <div class="container">
+                    <div class="row g-4 d-flex justify-content-center">
+                        <div class="col-md-4 col-12 box1">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                        <div class="col-md-4 col-12 box2">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                        <div class="col-md-4 col-12 box3">
+                            <div class="text">
+                                <p>当社サービスの概要などの 紹介資料を公開しています</p>
+                            </div>
+                            <a href="#" class="btn">資料請求 <i class="fas fa-arrow-right ms-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="scroll-reveal" style="margin-top:60px; ">
+        <div class="row g-4">
+            <div class="col-md-4 col-12">
+                <div class="box1">
+                    <h1>PRODUCT</h1>
+                    <p>プロダクト</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box2">
+                    <h1>SOLUTION</h1>
+                    <p>課題から探す</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="box3">
+                    <h1>Resource</h1>
+                    <p>リソース</p>
+                    <div class="arrow-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box4">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box5">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div class="box6">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="box7">
+                    <p style="padding-left:30px;">企業情報</p>
+                    <p style="font-size: small; color: #db2c36;">Copyright dmg @Baryon Partners Corporation All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="{% url 'inquiry_page' %}" class="btn" id="scrollButton" style="display: none;">お問い合わせ <i class="fas fa-arrow-right ms-1"></i><br>お気軽にご相談ください</a>
+
+    <!-- Bootstrap JavaScript and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{%static 'js/scripts.js'%}"></script>
+
+    
+</body>
+
+</html>
